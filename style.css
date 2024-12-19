@@ -210,7 +210,7 @@ footer i {
 
   #quote {
     font-size: 1rem; /* Slightly smaller font size */
-    line-height: 0.5; /* Improve readability */
+   
     word-wrap: break-word; /* Prevent long words from overflowing */
     text-align: justify; /* Align text neatly */
     width: 100%; /* Fit the container width */
