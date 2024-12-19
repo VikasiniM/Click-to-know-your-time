@@ -171,18 +171,10 @@ footer i {
   @media (max-width: 640px) {
     .container {
       writing-mode: horizontal-tb;
-      width: 50%;
+      width: 100%;
     }
   
-    .container > * + * {
-      border-top: none;
-      border-right: 1px solid #9ca3af;
-    }
-  
-    .container-inner-bottom > * + * {
-      border-top: 1px solid #9ca3af;
-      border-left: none;
-    }
+   
   
     .section-bottom {
       flex-direction: column;
