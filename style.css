@@ -171,7 +171,7 @@ footer i {
   @media (max-width: 640px) {
     .container {
       writing-mode: horizontal-tb;
-      width: 100%;
+      width: 55%;
     }
   
    
@@ -183,6 +183,8 @@ footer i {
   
     .section-times {
       margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
   
     #month,
