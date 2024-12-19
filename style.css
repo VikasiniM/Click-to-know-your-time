@@ -186,34 +186,38 @@ footer i {
       margin-right: 10px;
       margin-left: 10px;
   }
-  @media (max-width: 640px) {
+ @media (max-width: 640px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   .container {
-    width: 90%; /* Ensure container fits the screen */
-    padding: 20px; /* Reduce padding for better layout */
+    width: 90%; /* Adjust container width for mobile screens */
+    padding: 15px; /* Reduce padding to fit smaller viewports */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
   }
 
   .quote-container {
     display: flex;
     flex-direction: column; /* Stack the title and quote vertically */
-    align-items: center;
-    width: 100%; /* Prevent overflow */
-    margin: 0 auto; /* Center the container */
-    box-sizing: border-box;
+    width: 100%; /* Set width to fit the container */
+    margin: 0; /* Remove any extra margin */
+    box-sizing: border-box; /* Prevent padding overflow */
   }
 
   .quote-title {
     font-size: 1.2rem; /* Adjust font size for mobile */
-    margin-bottom: 10px; /* Add spacing between title and quote */
-    text-align: center; /* Center the title */
-    word-wrap: break-word; /* Ensure long words break to fit */
+    text-align: center; /* Center the title text */
+    margin-bottom: 10px;
+    word-break: break-word; /* Break long words */
   }
 
   #quote {
-    font-size: 1rem; /* Slightly smaller font size */
-   
-    word-wrap: break-word; /* Prevent long words from overflowing */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
     text-align: justify; /* Align text neatly */
-    width: 100%; /* Fit the container width */
-    overflow-wrap: break-word; /* Handle breaking lines gracefully */
+    word-break: break-word; /* Break long words to prevent overflow */
+    width: 100%; /* Ensure quote text fits within the container */
   }
 }
