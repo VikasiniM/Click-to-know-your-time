@@ -1,7 +1,8 @@
 # Click-to-know-your-time
 
-Welcome to my unique and inspiring project! 🌟  
-This repository showcases a digital clock that not only displays the current time dynamically but also provides a daily dose of motivation with random quotes.  
+Welcome to my unique and inspiring project! 🌟 
+
+This repository showcases a digital clock that not only displays the current time dynamically but also provides a daily dose of motivation with random quotes that make your day productive and positive.  
 
 ## Live Website  
 Check out the live version here:  
