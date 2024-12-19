@@ -188,28 +188,28 @@ footer i {
   }
   @media (max-width: 640px) {
     .container {
-      width: 90%; /* Adjusted to fit smaller screens */
-      padding: 20px; /* Reduce padding for better layout */
+      width: 90%; 
+      padding: 20px; 
     }
   
     .quote-container {
-      flex-direction: column; /* Stack elements vertically */
+      flex-direction: column; 
       align-items: flex-start;
       margin-top: 10px;
-      width: 100%; /* Fix overflow issues */
+      width: 60%; /* Fix overflow issues */
     }
   
     .quote-title {
-      font-size: 1rem; /* Adjust font size for mobile */
-      margin-bottom: 10px; /* Add spacing between title and quote */
-      text-align: justify; /* Align text to the left */
+      font-size: 1rem;
+      margin-bottom: 10px; 
+      text-align: justify; 
     }
   
     #quote {
-      font-size: 1rem; /* Slightly smaller font size */
+      font-size: 1rem; 
       word-wrap: break-word;
       text-align: justify;
-      line-height: 1.5; /* Improve readability */
+      line-height: 5; 
     }
   }
   
