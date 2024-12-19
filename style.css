@@ -126,7 +126,7 @@
     font-style: italic;
     font-size: 1.2rem;
     color: #d1d5db; 
-    flex: 2;
+    flex: 4;
     word-wrap: break-word;
     text-align: justify;
   }
