@@ -200,6 +200,7 @@ footer i {
 
   .quote-container {
     display: flex;
+    align-items: stretch;
     flex-direction: column; /* Stack the title and quote vertically */
     width: 100%; /* Set width to fit the container */
     margin: 0; /* Remove any extra margin */
@@ -219,5 +220,7 @@ footer i {
     text-align: justify; /* Align text neatly */
     word-break: break-word; /* Break long words to prevent overflow */
     width: 100%; /* Ensure quote text fits within the container */
+      margin: 0; /* Remove unnecessary margins */
+    padding: 0;
   }
 }
