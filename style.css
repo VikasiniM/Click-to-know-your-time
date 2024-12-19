@@ -87,7 +87,7 @@
   
   .container-inner-bottom {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     column-gap: 2rem;
     margin-top: 20px;
   }
@@ -188,7 +188,10 @@ footer i {
         margin-right: 10px;
         margin-left: 10px;
     }
-  
+  .container {
+      min-width: 400px; 
+    min-height: 200px;
+  }
     #month,
     #year {
       margin-left: 0;
