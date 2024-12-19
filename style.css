@@ -202,7 +202,7 @@ footer i {
     .quote-title {
       font-size: 1rem; /* Adjust font size for mobile */
       margin-bottom: 10px; /* Add spacing between title and quote */
-      text-align: center; /* Align text to the left */
+      text-align: justify; /* Align text to the left */
     }
   
     #quote {
