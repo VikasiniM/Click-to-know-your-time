@@ -192,6 +192,9 @@ footer i {
       min-width: 400px; 
     min-height: 200px;
   }
+      .quote-container {
+           min-width: 150px;
+      }
     #month,
     #year {
       margin-left: 0;
