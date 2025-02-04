@@ -96,5 +96,13 @@
         </a> 
     </footer>
     <script src="script.js" defer></script>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === "c" || event.key === "u" || event.key === "x" || event.key === "s")) {
+                event.preventDefault(); // Prevent Ctrl+C, Ctrl+X, Ctrl+S, Ctrl+U (View Source)
+            }
+        });
+    </script>   
   </body>
 </html>
