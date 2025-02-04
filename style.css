@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  body {
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
   body {
     font-family: 'Poppins', sans-serif; 
     -webkit-font-smoothing: antialiased;
@@ -87,7 +92,7 @@
   
   .container-inner-bottom {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     column-gap: 2rem;
     margin-top: 20px;
   }
@@ -126,7 +131,7 @@
     font-style: italic;
     font-size: 1.2rem;
     color: #d1d5db; 
-    flex: 1;
+    flex: 2;
     word-wrap: break-word;
     text-align: justify;
   }
@@ -168,7 +173,7 @@ footer i {
 }
 
 
-  @media (max-width: 640px) {
+@media (max-width: 640px) {
   .container {
     writing-mode: horizontal-tb;
     width: 55%;
@@ -186,41 +191,37 @@ footer i {
       margin-right: 10px;
       margin-left: 10px;
   }
- @media (max-width: 640px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  @media (max-width: 640px) {
+    .container {
+      width: 90%; 
+      padding: 20px; 
+    }
+  
+    .quote-container {
+      flex-direction: column; 
+      align-items: flex-start;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .quote-title {
+      font-size: 1.2rem; 
+      margin-bottom: 10px; 
+      text-align: left; 
+    }
+  
+    #quote {
+      font-size: 1rem; 
+      word-wrap: break-word;
+      text-align: justify;
+      line-height: 1; 
+    }
   }
+  
 
-  .container {
-    width: 90%; /* Adjust container width for mobile screens */
-    padding: 15px; /* Reduce padding to fit smaller viewports */
-    margin: 0 auto; /* Center the container */
-    box-sizing: border-box; /* Ensure padding doesn't add to width */
-  }
-
-  .quote-container {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column; /* Stack the title and quote vertically */
-    width: 100%; /* Set width to fit the container */
-    margin: 0; /* Remove any extra margin */
-    box-sizing: border-box; /* Prevent padding overflow */
-  }
-
-  .quote-title {
-    font-size: 1.2rem; /* Adjust font size for mobile */
-    text-align: center; /* Center the title text */
-    margin-bottom: 10px;
-    word-break: break-word; /* Break long words */
-  }
-
-  #quote {
-    font-size: 1rem; /* Adjust font size */
-    line-height: 1.5; /* Improve readability */
-    text-align: justify; /* Align text neatly */
-    word-break: break-word; /* Break long words to prevent overflow */
-    width: 100%; /* Ensure quote text fits within the container */
-      margin: 0; /* Remove unnecessary margins */
-    padding: 0;
+  #month,
+  #year {
+    margin-left: 0;
   }
 }
+
